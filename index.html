@@ -10,6 +10,110 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+
+    
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+header {
+    background-color: #100f0f;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Main Sections */
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+.firstSection, .aboutSection, .secondSection, .skillsSection, .educationSection {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2c2c2c; /* Section background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    .firstSection {
+        flex-direction: column; /* Stack left and right sections */
+    }
+
+    .leftSection, .rightSection {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .rightSection img {
+        max-width: 80%; /* Responsive image */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.5em; /* Adjust heading sizes */
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    .skill {
+        margin: 10px 0; /* Space out skills */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* 3D Effect for Skills and Buttons */
+.skill, .btn {
+    perspective: 1000px;
+}
+
+.skill:hover, .btn:hover {
+    transform: rotateY(10deg);
+    transition: transform 0.3s;
+}
+</style>
 </head>
 
 <body>
@@ -98,13 +202,13 @@
                     <h4>Excel</h4>
                 </div>
                 <div class="skill">
-                    <h4> Pandas</h4>
+                    <h4>Pandas</h4>
                 </div>
                 <div class="skill">
-                    <h4> Numpy</h4>
+                    <h4>Numpy</h4>
                 </div>
                 <div class="skill">
-                    <h4> Matplotlib</h4>
+                    <h4>Matplotlib</h4>
                 </div>
                 <div class="skill">
                     <h4>Python</h4>
@@ -210,3 +314,4 @@
 </body>
 
 </html>
+
