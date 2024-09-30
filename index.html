@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehafus - Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mehafus Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                <div class="intro">
+                    Hi, This is <span>Shaik Mehafus</span>
+                </div>
+                <div>I am a passionate Frontend Developer</div>
+                <div class="role">
+                    <span id="typed"></span>
+                </div>
+                <div class="buttons">
+                    <a href="SHAIK_MEHAFUS.pdf" target="_blank">
+                        <button class="btn">View Resume</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="img.png.jpeg" alt="Profile Picture">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="aboutSection" id="about">
+            <h2>About Me</h2>
+            <p>A passionate, inquisitive, adaptable student with an interest in modern technologies. Skilled in HTML, CSS, JavaScript, Python, SQL, and Tailwind. Strong team player with problem-solving, leadership, and creativity skills, and a quick learner who approaches work with responsibility and adaptability.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="secondSection" id="projects">
+            <h1>Projects</h1>
+            <div class="projects">
+                <div class="projectCard">
+                    <h3>Automated Four Wheeler Collision Avoidance System</h3>
+                    <a href="project-collision-avoidance.html">
+                        <button>About Project</button>
+                    </a>
+                </div>
+                <div class="projectCard">
+                    <h3>Missing Data Recovery Using ML</h3>
+                    <a href="project-missing-data-recovery.html">
+                        <button>About Project</button>
+                    </a>
+                </div>
+                <div class="projectCard">
+                    <h3>Customer Churn Prediction Using ML</h3>
+                    <a href="project-churn-predicition.html">
+                        <button>About Project</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skillsSection" id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill">
+                    <h4>Excel</h4>
+                </div>
+                <div class="skill">
+                    <h4> Pandas</h4>
+                </div>
+                <div class="skill">
+                    <h4> Numpy</h4>
+                </div>
+                <div class="skill">
+                    <h4> Matplotlib</h4>
+                </div>
+                <div class="skill">
+                    <h4>Python</h4>
+                </div>
+                <div class="skill">
+                    <h4>SQL</h4>
+                </div>
+                <div class="skill">
+                    <h4>Tailwind CSS</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="educationSection" id="education">
+            <h2>Education</h2>
+            <div class="educationDetails">
+                <div class="educationItem">
+                    <h3>Kumaraguru College of Technology</h3>
+                    <p>B.E., Electronics and Communication Engineering</p>
+                    <p>Duration: 2020 - 2024</p>
+                    <p>CGPA: 8.0</p>
+                    <p>Location: Coimbatore, Tamil Nadu</p>
+                </div>
+                <div class="educationItem">
+                    <h3>Narayana Junior College</h3>
+                    <p>Pre-University (Intermediate)</p>
+                    <p>Duration: 2018 - 2020</p>
+                    <p>CGPA: 8.9</p>
+                </div>
+                <div class="educationItem">
+                    <h3>Srinivasa High School</h3>
+                    <p>Secondary Schooling</p>
+                    <p>Duration: 2016 - 2018</p>
+                    <p>CGPA: 9.8</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Mehafus Portfolio</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </div>
+            
+            <div class="social-icons">
+                <a href="mailto:shaikmehafus2002@gmail.com" title="Email">📧</a>
+                <a href="tel:+916303319752" title="Call">📞</a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">🔗</a>
+                <a href="https://twitter.com" target="_blank" title="Twitter">🐦</a>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.shaiksportfolio.com | @All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Frontend Developer', 'Business Analyst', 'Software Developer', 'Fullstack Developer'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        // 3D cursor effect
+        const cursor = document.createElement('div');
+        cursor.style.position = 'fixed';
+        cursor.style.width = '20px';
+        cursor.style.height = '20px';
+        cursor.style.borderRadius = '50%';
+        cursor.style.backgroundColor = 'rgba(255, 74, 87, 0.8)';
+        cursor.style.pointerEvents = 'none';
+        cursor.style.boxShadow = '0 0 10px rgba(255, 74, 87, 0.8)'; // Glowing effect
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.pageX - 10}px`; // Center the cursor
+            cursor.style.top = `${e.pageY - 10}px`;
+        });
+
+        // Add hover effect to sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.addEventListener('mouseenter', () => {
+                section.style.transform = 'scale(1.02)';
+                section.style.transition = 'transform 0.5s';
+            });
+            section.addEventListener('mouseleave', () => {
+                section.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>

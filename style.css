@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000; 
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; 
+    overflow-x: hidden;
+    overflow-y: auto; 
+    animation: backgroundAnimation 15s ease-in-out infinite alternate;
+    perspective: 1000px; 
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: #000000;
+    }
+
+    100% {
+        background: #1a1a1a; 
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0 70px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s; 
+}
+
+nav:hover {
+    background-color: rgba(0, 0, 0, 1); 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffdb58; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4a57; 
+    transform: scale(1.1); 
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 50px;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.leftSection {
+    width: 50%;
+    text-align: left;
+}
+
+.leftSection .intro {
+    font-size: 2.5rem;
+    color: #ffdb58; 
+    text-shadow: 2px 2px 8px rgba(255, 255, 204, 0.7);
+}
+
+.leftSection .intro span {
+    color: #ff4a57; 
+}
+
+.leftSection .role {
+    font-size: 1.5rem;
+    padding: 15px 0;
+    color: #00ffcc; 
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #ff4a57; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 74, 87, 0.5);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 74, 87, 0.8);
+}
+
+.rightSection {
+    position: relative;
+
+}
+
+.rightSection img {
+    
+    width: 35%;
+    height: 10%;
+    border-radius: 20%;
+    transition: transform 0.5s, opacity 0.5s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    animation: fadeInRight 1.5s ease-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.rightSection img:hover {
+    transform: scale(1.1) rotateY(15deg);
+}
+
+.aboutSection {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-out;
+}
+
+.aboutSection h2 {
+    font-size: 2rem;
+    color: #ffdb58; 
+    margin-bottom: 20px;
+}
+
+.secondSection {
+    text-align: center;
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-out;
+}
+
+.secondSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #ffdb58; 
+    text-shadow: 0 4px 10px rgba(0, 255, 204, 0.8);
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 85%;
+    flex-wrap: wrap; 
+}
+
+.projectCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 30%;
+    border-radius: 12px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    text-align: left;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    perspective: 1000px; 
+}
+.projectCard:hover {
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 10px 30px rgba(255, 74, 87, 0.7);
+}
+
+.skillsSection {
+    margin: 50px 0;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s, box-shadow 0.3s; 
+    perspective: 1000px; 
+    animation: fadeIn 1s ease-out; 
+}
+
+.skillsSection h2 {
+    margin-bottom: 20px;
+    color: #ffdb58; 
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, color 0.3s, box-shadow 0.3s; 
+    perspective: 1000px; 
+    animation: fadeIn 1s ease-out; 
+}
+
+.skill:hover {
+    transform: translateY(-10px) rotateX(10deg) scale(1.1); 
+    color: #00ffcc; 
+    box-shadow: 0 8px 15px rgba(0, 255, 204, 0.5); 
+}
+
+.educationSection {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin: 0 50px; 
+}
+
+.educationSection h2 {
+    font-size: 2rem;
+    color: #ffdb58; 
+    margin-bottom: 20px;
+}
+
+.educationDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    perspective: 1000px; 
+}
+
+.educationItem {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    transform: translateZ(20px); 
+    transition: transform 0.3s ease;
+    width: 80%; 
+}
+
+.educationItem:hover {
+    transform: translateZ(30px); 
+    box-shadow: 0 8px 15px rgba(0, 255, 204, 0.5); 
+}
+
+footer {
+    background-color: rgba(8, 12, 17, 0.9);
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(13, 5, 5, 0.1), rgba(39, 26, 59, 0.8));
+    filter: blur(150px);
+    z-index: 0;
+}
+
+footer .footer-content h3 {
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer ul {
+    
+    list-style: none;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    color: rgb(125, 15, 15);
+    margin-bottom: 20px;
+    
+    text-decoration: none;
+      
+      
+}
+
+footer ul li {
+    margin: 0;
+    justify-content: center;
+   text-decoration: none;
+   text-align: right;
+}
+
+footer .social-icons {
+ text-decoration: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+ footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #00ffcc; 
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 255, 204, 0.5); Soft glow on hover
+}
+
+footer .footer-rights {
+    text-align: center ;
+    margin-top: 20px;
+    color: gray;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+    /* Button Styles */
+    .btn, .projectCard button {
+        padding: 12px 25px;
+        background: linear-gradient(145deg, #ff4a57, #ff6f5e); /* Gradient effect */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(255, 74, 87, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .btn:hover, .projectCard button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(255, 74, 87, 0.8);
+        background: linear-gradient(145deg, #ff6f5e, #ff4a57); /* Invert gradient on hover */
+    }
+
+    .btn:focus, .projectCard button:focus {
+        outline: none;
+        box-shadow: 0 0 5px #ff4a57;
+    }
+
+    /* Button alignment inside project cards */
+    .projectCard button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        list-style: non;
+       
+    }
+
+   
+
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000; 
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    header h1 {
+        text-align: center;
+        color: #ffdb58; 
+        text-shadow: 2px 2px 8px rgba(255, 255, 204, 0.7); 
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+
+    section {
+        background-color: rgba(255, 255, 255, 0.1); 
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        margin-bottom: 40px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+        transform: translateY(-10px) rotateY(5deg); 
+        box-shadow: 0 10px 30px rgba(255, 255, 204, 0.6); 
+    }
+
+    section p {
+        margin-bottom: 20px;
+        color: #ddd; 
+        line-height: 1.8; 
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        color: #bbb; 
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
+
+    footer p {
+        margin-bottom: 5px;
+        text-decoration: none;
+    }
+
+    /* Back Button Styling */
+    .back-btn {
+        display: inline-block;
+        background: linear-gradient(145deg, #ff4a57, #ff6f5e); 
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(255, 74, 87, 0.6);
+        margin-top: 30px;
+    }
+
+    .back-btn:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 8px 15px rgba(255, 74, 87, 0.8);
+        background: linear-gradient(145deg, #ff6f5e, #ff4a57); 
+    }
+
+    .back-btn:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(255, 74, 87, 1); 
+    }
