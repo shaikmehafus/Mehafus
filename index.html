@@ -14,7 +14,7 @@
     
     <style>
 
-    
+ /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background-color: #100f0f;
+    background-color: #1e1e1e;
     padding: 10px;
 }
 
@@ -32,12 +32,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap; /* Wrap nav items */
 }
 
 nav a {
@@ -71,11 +73,17 @@ main {
 
     .leftSection, .rightSection {
         width: 100%; /* Full width on small screens */
+        text-align: center; /* Center text */
     }
 
     .rightSection img {
         max-width: 80%; /* Responsive image */
         height: auto;
+    }
+
+    .projectCard {
+        margin: 10px 0; /* Space out project cards */
+        text-align: center; /* Center text */
     }
 }
 
@@ -90,8 +98,15 @@ main {
         align-items: center;
     }
 
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for skills */
+        gap: 10px; /* Space out skills */
+    }
+
     .skill {
         margin: 10px 0; /* Space out skills */
+        text-align: center; /* Center text */
     }
 }
 
@@ -115,6 +130,7 @@ footer {
     transform: rotateY(10deg);
     transition: transform 0.3s;
 }
+
 </style>
 </head>
 
