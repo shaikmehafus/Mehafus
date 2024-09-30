@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-<style>
+    <style>
+
+    
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -19,7 +21,7 @@ body {
 }
 
 header {
-    background-color: #1e1e1e;
+    background-color: #100f0f;
     padding: 10px;
 }
 
@@ -27,14 +29,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
-    flex-wrap: wrap; /* Wrap nav items */
 }
 
 nav a {
@@ -63,23 +63,16 @@ main {
     }
 
     .firstSection {
-        display: flex;
         flex-direction: column; /* Stack left and right sections */
     }
 
     .leftSection, .rightSection {
         width: 100%; /* Full width on small screens */
-        text-align: center; /* Center text */
     }
 
     .rightSection img {
         max-width: 80%; /* Responsive image */
         height: auto;
-    }
-
-    .projectCard {
-        margin: 10px 0; /* Space out project cards */
-        text-align: center; /* Center text */
     }
 }
 
@@ -94,20 +87,8 @@ main {
         align-items: center;
     }
 
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns for skills */
-        gap: 10px; /* Space out skills */
-    }
-
     .skill {
         margin: 10px 0; /* Space out skills */
-        text-align: center; /* Center text */
-    }
-
-    .educationItem {
-        margin-bottom: 20px; /* Space between education items */
-        text-align: center; /* Center text */
     }
 }
 
@@ -131,9 +112,7 @@ footer {
     transform: rotateY(10deg);
     transition: transform 0.3s;
 }
-
 </style>
-    
 </head>
 
 <body>
@@ -209,16 +188,36 @@ footer {
         <section class="skillsSection" id="skills">
             <h2>Skills</h2>
             <div class="skills">
-                <div class="skill"><h4>HTML</h4></div>
-                <div class="skill"><h4>CSS</h4></div>
-                <div class="skill"><h4>JavaScript</h4></div>
-                <div class="skill"><h4>Excel</h4></div>
-                <div class="skill"><h4>Pandas</h4></div>
-                <div class="skill"><h4>Numpy</h4></div>
-                <div class="skill"><h4>Matplotlib</h4></div>
-                <div class="skill"><h4>Python</h4></div>
-                <div class="skill"><h4>SQL</h4></div>
-                <div class="skill"><h4>Tailwind CSS</h4></div>
+                <div class="skill">
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill">
+                    <h4>Excel</h4>
+                </div>
+                <div class="skill">
+                    <h4>Pandas</h4>
+                </div>
+                <div class="skill">
+                    <h4>Numpy</h4>
+                </div>
+                <div class="skill">
+                    <h4>Matplotlib</h4>
+                </div>
+                <div class="skill">
+                    <h4>Python</h4>
+                </div>
+                <div class="skill">
+                    <h4>SQL</h4>
+                </div>
+                <div class="skill">
+                    <h4>Tailwind CSS</h4>
+                </div>
             </div>
         </section>
 
