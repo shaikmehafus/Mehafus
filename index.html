@@ -4,115 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehafus - Developer</title>
+    <title>Mehafus - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-
-    
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text */
-}
-
-header {
-    background-color: #100f0f;
-    padding: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-/* Main Sections */
-main {
-    padding: 20px;
-}
-
-/* Section Styles */
-.firstSection, .aboutSection, .secondSection, .skillsSection, .educationSection {
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #2c2c2c; /* Section background */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        align-items: center;
-    }
-
-    .firstSection {
-        flex-direction: column; /* Stack left and right sections */
-    }
-
-    .leftSection, .rightSection {
-        width: 100%; /* Full width on small screens */
-    }
-
-    .rightSection img {
-        max-width: 80%; /* Responsive image */
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    h1, h2, h3 {
-        font-size: 1.5em; /* Adjust heading sizes */
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center;
-    }
-
-    .skill {
-        margin: 10px 0; /* Space out skills */
-    }
-}
-
-/* Footer Styles */
-footer {
-    background-color: #1e1e1e;
-    padding: 10px;
-    text-align: center;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-/* 3D Effect for Skills and Buttons */
-.skill, .btn {
-    perspective: 1000px;
-}
-
-.skill:hover, .btn:hover {
-    transform: rotateY(10deg);
-    transition: transform 0.3s;
-}
-</style>
 </head>
 
 <body>
@@ -142,14 +38,13 @@ footer {
                     <span id="typed"></span>
                 </div>
                 <div class="buttons">
-                    <a href="SHAIK_MEHAFUS.pdf" target="_blank">
+                    <a href="docs/SHAIK_MEHAFUS.pdf" target="_blank">
                         <button class="btn">View Resume</button>
                     </a>
                 </div>
             </div>
-
             <div class="rightSection">
-                <img src="img.png.jpeg" alt="Profile Picture">
+                <img src="MEHAFUS IMAGE.jpeg" alt="Profile Picture">
             </div>
         </section>
 
@@ -260,7 +155,7 @@ footer {
                     <li><a href="#education">Education</a></li>
                 </ul>
             </div>
-            
+
             <div class="social-icons">
                 <a href="mailto:shaikmehafus2002@gmail.com" title="Email">📧</a>
                 <a href="tel:+916303319752" title="Call">📞</a>
@@ -274,42 +169,7 @@ footer {
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#typed', {
-            strings: ['Frontend Developer', 'Business Analyst', 'Software Developer', 'Fullstack Developer'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true
-        });
-
-        // 3D cursor effect
-        const cursor = document.createElement('div');
-        cursor.style.position = 'fixed';
-        cursor.style.width = '20px';
-        cursor.style.height = '20px';
-        cursor.style.borderRadius = '50%';
-        cursor.style.backgroundColor = 'rgba(255, 74, 87, 0.8)';
-        cursor.style.pointerEvents = 'none';
-        cursor.style.boxShadow = '0 0 10px rgba(255, 74, 87, 0.8)'; // Glowing effect
-        document.body.appendChild(cursor);
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = `${e.pageX - 10}px`; // Center the cursor
-            cursor.style.top = `${e.pageY - 10}px`;
-        });
-
-        // Add hover effect to sections
-        const sections = document.querySelectorAll('section');
-        sections.forEach(section => {
-            section.addEventListener('mouseenter', () => {
-                section.style.transform = 'scale(1.02)';
-                section.style.transition = 'transform 0.5s';
-            });
-            section.addEventListener('mouseleave', () => {
-                section.style.transform = 'scale(1)';
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
